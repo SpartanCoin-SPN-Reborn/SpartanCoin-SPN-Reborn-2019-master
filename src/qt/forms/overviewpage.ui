@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: rgb(255, 249, 178);
+   <string notr="true">color: rgb(255, 255, 255);
 font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
   </property>
   <layout class="QVBoxLayout" name="topLayout">
@@ -68,7 +68,7 @@ font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
             <item>
              <widget class="QLabel" name="label_4">
               <property name="text">
-               <string>&lt;b&gt;Recent transactions&lt;/b&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Last SPN transactions&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -126,49 +126,6 @@ font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
         </widget>
        </item>
        <item>
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_wallet_bgcoin">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>:/images/wallet_bgcoin</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>false</bool>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-         <property name="margin">
-          <number>-2</number>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_6">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
         <widget class="QFrame" name="frame">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -191,7 +148,7 @@ font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
                </font>
               </property>
               <property name="text">
-               <string>Wallet</string>
+               <string>Wallet Spartancoin REBORN 2019</string>
               </property>
              </widget>
             </item>
@@ -300,44 +257,87 @@ font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
             </item>
            </layout>
           </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Balance:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelBalance">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>14</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>IBeamCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Your current balance</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+            </property>
+            <property name="text">
+             <string notr="true">0 SPN</string>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="labelBalance">
-         <property name="font">
-          <font>
-           <family>MS Shell Dlg 2</family>
-           <pointsize>14</pointsize>
-           <weight>9</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
          </property>
-         <property name="cursor">
-          <cursorShape>IBeamCursor</cursorShape>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
          </property>
-         <property name="toolTip">
-          <string>Your current balance</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
-         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_wallet_bgcoin">
          <property name="text">
-          <string notr="true">0 SPN</string>
+          <string/>
          </property>
-         <property name="textInteractionFlags">
-          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+         <property name="pixmap">
+          <pixmap>:/images/wallet_bgcoin</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="margin">
+          <number>-2</number>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="label_6">
          <property name="text">
-          <string>Balance:</string>
+          <string/>
          </property>
         </widget>
        </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <spacer name="verticalSpacer_2">
          <property name="orientation">

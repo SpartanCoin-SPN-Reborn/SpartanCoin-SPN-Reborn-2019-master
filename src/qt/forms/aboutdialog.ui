@@ -15,8 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/images/bkg2);
-color: rgb(255, 249, 178);
-color: rgb(170, 170, 127);</string>
+color: rgb(255, 255, 255);</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
